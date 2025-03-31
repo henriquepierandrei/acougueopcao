@@ -576,16 +576,35 @@ footer {
     }
     
     nav ul {
+        transition: 1s;
         flex-direction: column;
         margin-top: 2rem;
     }
-    
-    nav ul li {
-        margin: 1rem 0;
-        border-left: 2px solid var(--accent);
-        padding-left: 10px;
+
+    nav ul li a {
+        
+        width: 230px; /* Define a largura desejada */
+        height: 40px;
+        display: inline-block; /* Para garantir que as dimensões definidas se apliquem corretamente */
+        text-align: start; /* Centraliza o texto horizontalmente */
+        line-height: 40px; /* Ajusta a linha de altura para centralizar verticalmente */
+        color: white; /* Cor do texto */
+        text-decoration: none; /* Remove sublinhado padrão */
     }
     
+    
+    nav ul li {
+        transition: 1s;
+        margin: 1rem 0;
+        border-left: 2px solid var(--accent);
+        border-bottom: 1px solid rgb(32, 32, 32);
+        border-radius: 10px;
+        padding: 5px;
+        padding-left: 10px;
+    }
+    nav ul li:hover{
+        background-color: rgb(32, 32, 32);
+    }
     .close-menu {
         position: absolute;
         top: 1rem;
