@@ -10,6 +10,18 @@
     overflow: hidden;
 }
 
+.text-up-product-card{
+    position: absolute;
+    left: 75%;
+    text-align: center;
+    margin: 10px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    padding: 2px;
+    background-color: rgb(231, 222, 222);
+    width: 50px;
+}
+
 .marquee-inner {
     display: flex;
     background: linear-gradient(90deg, #861616, #da2013);
