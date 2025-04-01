@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Açougue Opção da Carne - Carnes de Qualidade</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="https://res.cloudinary.com/dvadwwvub/image/upload/v1743439339/AcougueOpcaoDaCarne/ndwjzqsd2xfy3x6eee0v.png">
     <style>
         /* Estilos para a data de atualização */
         .price-update {
@@ -58,14 +59,17 @@
                 <button class="close-menu" id="closeMenu">×</button>
                 <ul>
                     <li><a href="#home">Início</a></li>
-                    <li><a href="#about">Sobre</a></li>
-                    <li><a href="#products">Produtos</a></li>
+                    <li><a href="#carnesbovinas">Carnes Bovinas</a></li>
+                    <li><a href="#carnessuinas">Carnes Suínas</a></li>
+                    <li><a href="#linguicasartesanais">Linguiças Artesanais</a></li>
+                    <li><a href="#kits">Kits Especiais</a></li>
                     <li><a href="#location">Localização</a></li>
                     <li><a href="#contact">Contato</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+    
 
     <section class="hero" id="home">
         <h1>Açougue Opção da Carne</h1>
@@ -75,17 +79,33 @@
             <a href="#location" class="btn btn-accent">Nossa Localização</a>
         </div>
     </section>
-
-
+    <div class="marquee-container">
+        <div class="marquee-inner">
+            <div class="marquee-content" id="marquee">
+                <span class="marquee-icon">🥩</span>
+                <span class="marquee-text">Aproveite a melhor carne de Rodeiro! Promoções imperdíveis só hoje!</span>
+                <span class="marquee-icon">🔥</span>
+                <span class="marquee-text">Carnes selecionadas a dedo para satisfazer o nosso cliente.</span>
+                <span class="marquee-icon">🤤</span>
+                <span class="marquee-text">Confira nossas Linguiças Artesanais! Saborosas e ideais para você!</span>
+            </div>
+            <div class="marquee-controls">
+                <button class="control-btn" id="pauseBtn" title="Pausar/Continuar">❙❙</button>
+                <button class="control-btn" id="speedBtn" title="Velocidade">▶▶</button>
+            </div>
+        </div>
+    </div>
+    
     <section class="section products" id="products">
         <div class="container">
             <div class="section-title">
                 <h2>Nossos Produtos</h2>
                 <p>Conheça nossos cortes selecionados</p>
             </div>
+            
 
             <!-- Categoria: Cortes Bovinos -->
-            <div class="category-section">
+            <div class="category-section" id="carnesbovinas">
                 <h2
                     style="text-align: start; margin-bottom: 30px; color: #252525; font-weight: bold;font-size: 1.5rem;font-weight: 900; border-left: 6px solid #8B0000; padding-left: 10px;">
                     Carnes Bovinas</h2>
@@ -431,7 +451,7 @@
             </div>
 
             <!-- Categoria: Cortes Suínas -->
-            <div class="category-section" style="margin-top: 50px;">
+            <div class="category-section" style="margin-top: 50px;" id="carnessuinas">
                 <h2
                     style="text-align: start; margin-bottom: 30px; color: #252525; font-weight: bold;font-size: 1.5rem;font-weight: 900; border-left: 6px solid #8B0000; padding-left: 10px;">
                     Cortes Suínas
@@ -689,7 +709,7 @@
             </div>
 
             <!-- Categoria: Linguiças Artesanais -->
-            <div class="category-section" style="margin-top: 50px;">
+            <div class="category-section" style="margin-top: 50px;" id="linguicasartesanais">
                 <h2
                     style="text-align: start; margin-bottom: 30px; color: #252525; font-weight: bold;font-size: 1.5rem;font-weight: 900; border-left: 6px solid #8B0000; padding-left: 10px;">
                     Linguiças Artesanais
@@ -747,7 +767,7 @@
             </div>
 
             <!-- Categoria: Kits Especiais -->
-            <div class="category-section" style="margin-top: 50px;">
+            <div class="category-section" style="margin-top: 50px;" id="kits">
                 <h2
                     style="text-align: start; margin-bottom: 30px; color: #252525; font-weight: bold;font-size: 1.5rem;font-weight: 900; border-left: 6px solid #8B0000; padding-left: 10px;">
                     Kits Especiais</h2>

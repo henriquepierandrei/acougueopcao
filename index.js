@@ -77,3 +77,41 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, 500);
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const marquee = document.getElementById('marquee');
+    const pauseBtn = document.getElementById('pauseBtn');
+    const speedBtn = document.getElementById('speedBtn');
+    
+    let isPaused = false;
+    let currentSpeed = 1;
+    const speeds = [1, 1.5, 0.5];
+    let speedIndex = 0;
+    
+    // Pausar/continuar a animação
+    pauseBtn.addEventListener('click', function() {
+        isPaused = !isPaused;
+        marquee.style.animationPlayState = isPaused ? 'paused' : 'running';
+        pauseBtn.innerHTML = isPaused ? '▶' : '❙❙';
+    });
+    
+    // Alternar velocidade
+    speedBtn.addEventListener('click', function() {
+        speedIndex = (speedIndex + 1) % speeds.length;
+        currentSpeed = speeds[speedIndex];
+        marquee.style.animationDuration = (20 / currentSpeed) + 's';
+        
+        // Feedback visual da velocidade
+        if (currentSpeed === 1) {
+            speedBtn.innerHTML = '▶▶';
+        } else if (currentSpeed > 1) {
+            speedBtn.innerHTML = '▶▶▶';
+        } else {
+            speedBtn.innerHTML = '▶';
+        }
+    });
+    
+    // Duplicar conteúdo para loop mais suave
+    marquee.innerHTML += marquee.innerHTML;
+});
