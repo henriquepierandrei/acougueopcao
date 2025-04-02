@@ -682,6 +682,20 @@ footer {
     }
 }
 
+.btn-primary{
+    position: absolute;
+    top: 85%;
+}
+
+.product-card.animate{
+    height: 525px;
+}
+
+.price-update{
+    position: absolute;
+    top: 78%;
+}
+
 
 
 @media (max-width: 992px) {
@@ -708,6 +722,12 @@ footer {
 
 @media (max-width: 768px) {
 
+    .price-update{
+        position: absolute;
+        top: 73%;
+    }
+    
+
     .text-up-product-card{
         left: 50%;
         padding: 0px;
@@ -721,8 +741,8 @@ footer {
         /* Espaçamento entre os itens */
     }
 
-    .product-card {
-        height: 270px;
+    .product-card.animate {
+        height: 260px;
         font-size: 0.8rem;
         width: 100%;
     }
@@ -838,5 +858,11 @@ footer {
 
     .section-title h2 {
         font-size: 2rem;
+    }
+}
+
+@media (max-width: 375px){
+    .price-update{
+        font-size: 0.54rem;
     }
 }
