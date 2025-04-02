@@ -10,6 +10,12 @@
     overflow: hidden;
 }
 
+.btn-primary-disabled{
+    background-color: gray;
+    cursor: not-allowed;
+
+}
+
 .text-up-product-card{
     position: absolute;
     left: 75%;
@@ -186,7 +192,7 @@ header.scrolled {
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     /* Pode adicionar um pouco de transparência para escurecer levemente */
-    background-color: var(--primary);
+    background-image: linear-gradient(to right, rgb(17, 4, 4), rgb(15, 13, 13));
 }
 
 .header-container {
@@ -299,13 +305,11 @@ nav ul li a:hover::after {
 
 .btn {
     display: inline-block;
-    background-color: var(--primary);
     color: white;
     padding: 0.8rem 1.8rem;
     border: none;
     border-radius: 5px;
     font-size: 1rem;
-    cursor: pointer;
     transition: all 0.3s;
     text-decoration: none;
     font-weight: 500;
@@ -699,7 +703,40 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Garante sempre duas colunas */
+        gap: 10px; /* Espaçamento entre os itens */
+    }
 
+    .product-card {
+        height: 450px;
+        
+        font-size: 0.8rem;
+        width: 100%; 
+    }
+
+    .product-info h3{
+        font-size: 0.8rem;
+    }
+
+    .product-info p {
+        display: none;
+    }
+
+    .btn{
+        font-size: 0.6rem;
+        padding: 10px;
+    }
+
+    .btn-primary{
+        position: absolute;
+        top: 90%;
+    }
+    .price{
+        font-size: 0.8rem;
+    }
+    
 
     .hamburger {
         display: block;
@@ -711,7 +748,7 @@ footer {
         right: -300px;
         width: 300px;
         height: 100vh;
-        background-image: linear-gradient(to bottom, black, rgb(31, 27, 27));
+        background-image: linear-gradient(to right, rgb(17, 4, 4), rgb(15, 13, 13));
         flex-direction: column;
         padding: 2rem;
         transition: right 0.3s;
