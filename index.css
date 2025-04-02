@@ -16,6 +16,11 @@
 
 }
 
+.btn-home{
+    background-color: #ff2525;
+    font-size: 1.3rem;
+}
+
 .text-up-product-card {
     position: absolute;
     left: 75%;
@@ -313,7 +318,7 @@ nav ul li a:hover::after {
     padding: 0.8rem 1.8rem;
     border: none;
     border-radius: 5px;
-    font-size: 1rem;
+    
     transition: all 0.3s;
     text-decoration: none;
     font-weight: 500;
@@ -336,8 +341,12 @@ nav ul li a:hover::after {
 
 .hero .btns {
     display: flex;
-    gap: 1rem;
+    justify-content: space-around;
+    align-items: center;
     opacity: 0;
+    gap: 1rem;
+    width: 100%;
+    height: 30px;
     transform: translateY(20px);
     animation: fadeInUp 1s forwards 1.1s;
 }
