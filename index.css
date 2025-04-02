@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
+.product-card.off {
+    pointer-events: none;
+    opacity: 0.5 !important;
+    filter: grayscale(100%);
+}
+
 
 /* Marquee Container Moderno */
 .marquee-container {
@@ -18,7 +24,7 @@
 
 
 
-.btn-home{
+.btn-home {
     background-color: #ff2525;
     font-size: 1.3rem;
 }
@@ -693,16 +699,16 @@ footer {
     }
 }
 
-.btn-primary{
+.btn-primary {
     position: absolute;
     top: 85%;
 }
 
-.product-card.animate{
+.product-card.animate {
     height: 525px;
 }
 
-.price-update{
+.price-update {
     position: absolute;
     top: 78%;
 }
@@ -733,17 +739,17 @@ footer {
 
 @media (max-width: 768px) {
 
-    .price-update{
+    .price-update {
         position: absolute;
         top: 73%;
     }
-    
 
-    .text-up-product-card{
+
+    .text-up-product-card {
         left: 50%;
         padding: 0px;
     }
-    
+
     .product-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -762,12 +768,12 @@ footer {
         font-size: 0.8rem;
     }
 
-    .product-price-container{
+    .product-price-container {
         margin-bottom: 0px;
     }
 
-    
-    .product-image{
+
+    .product-image {
         height: 100px;
     }
 
@@ -872,8 +878,8 @@ footer {
     }
 }
 
-@media (max-width: 375px){
-    .price-update{
+@media (max-width: 375px) {
+    .price-update {
         font-size: 0.54rem;
     }
 }
