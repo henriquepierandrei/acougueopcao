@@ -140,6 +140,10 @@
         animation-duration: 15s;
     }
 
+    .price-update {
+        font-size: 0.64rem;
+    }
+
     .marquee-controls {
         right: 10px;
     }
