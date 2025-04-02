@@ -745,7 +745,7 @@ footer {
 
     .price-update {
         position: absolute;
-        top: 73%;
+        top: 70%;
     }
 
 
@@ -763,7 +763,8 @@ footer {
     }
 
     .product-card.animate {
-        height: 260px;
+        height: 245px;
+        padding-bottom: 10px;
         font-size: 0.8rem;
         width: 100%;
     }
@@ -797,8 +798,11 @@ footer {
     .btn-primary {
         position: absolute;
         margin-bottom: 5px;
-        padding: 5px;
-        top: 85%;
+        padding: 8px;
+        
+        width: max-content;
+        text-align: center;
+        top: 83%;
     }
 
     .price {
